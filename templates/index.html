@@ -210,19 +210,5 @@ def home():
 </section>
 </body>
 </html>
-    '''
-@app.route('/kirim', methods=['POST'])
-def kirim():
-    nama = request.form['nama']
-    email = request.form['email'] 
-    pesan = request.form['pesan']
     
-    print("=== PESAN BARU ===")
-    print(f"Nama: {nama}")
-    print(f"Email: {email}")
-    print(f"Pesan: {pesan}")
-    print("==================")
-    
-    return "Terima kasih! Pesan Anda sudah terkirim."
-if __name__ == '__main__':
-    app.run(host=0'.0.0.0.0', port=5000)
+
