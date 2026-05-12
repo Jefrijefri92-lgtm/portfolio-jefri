@@ -1,2 +1,0 @@
-flask==3.0.3
-ginocorn==21.2.0
