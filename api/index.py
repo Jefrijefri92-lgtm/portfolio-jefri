@@ -1,9 +1,10 @@
-from flask import Flask
+from http.server import BaseHTTPRequestHandler
 
-app = Flask(__name__)
-
-@app.route('/')
-def home():
-    return '<h1>WEB JEFRI UDAH LIVE BRO!</h1><p>4 Jam 45 Menit Drama Tamat</p>'
-
-app = app
+class handler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        self.send_response(200)
+        self.send_header('Content-type', 'text/html')
+        self.end_headers()
+        html = '<h1>UDAH BISA JEFRI!</h1><p>Typo ginocorn kelar. 5 jam 10 menit tamat.</p>'
+        self.wfile.write(html.encode())
+        return
