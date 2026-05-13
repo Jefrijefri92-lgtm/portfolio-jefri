@@ -78,13 +78,27 @@
     .lightbox img {
         max-width: 95%;
     }
-      @media (max-width: 600px) {
-     .hero .btn {
-       display: block;
-       margin: 10px auto;
-       width: 80%;
-     }
-   }
+     @media (max-width: 600px) {
+  .hero .btn {
+    display: block;
+    margin: 12px auto;  /* auto biar ke tengah */
+    width: 85%;
+    max-width: 300px;
+  }
+  
+  .hero .btn[style*="margin-left"] {
+    margin-left: auto !important; /* override margin-left inline */
+  }
+.hero {
+  padding: 60px 20px;
+  text-align: center;
+}
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+    }
+ }
     </style>
 </head>
 <body>
