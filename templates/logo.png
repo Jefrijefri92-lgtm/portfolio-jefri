@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logo - Jefri Design</title>
+    <title>logo.png - Jefri Design</title>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -64,7 +64,7 @@
     
     <img src="/static/logo.png" alt="Logo kopi" class="project-img">
     
-    <h1>Logo</h1>
+    <h1>Logo.png</h1>
     <p class="meta">Client: kopi | 2024 | Logo & Brand Identity</p>
     
     <h3>Brief</h3>
