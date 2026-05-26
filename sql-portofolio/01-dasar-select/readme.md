@@ -13,3 +13,10 @@
 ## Query & Hasil
 Semua query ada di file `hari1.sql`.
 
+## Insight Singkat
+- Jakarta punya penjualan terbanyak dengan 3 transaksi
+- Produk termahal adalah Latte seharga Rp 25.000  
+- Transaksi terakhir terjadi pada 10 Januari 2024
+
+- ## Link DB Fiddle
+https://dbfiddle.uk/ERdZEnu
