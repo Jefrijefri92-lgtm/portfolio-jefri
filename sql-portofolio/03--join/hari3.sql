@@ -1,5 +1,24 @@
 -- Hari 3: INNER JOIN, LEFT JOIN
 
+-- Setup tabel ke-2 produk untuk JOIN
+CREATE TABLE produk (
+  produk_id INT PRIMARY KEY,
+  nama_produk VARCHAR(50),
+  harga INT
+);
+
+INSERT INTO produk (produk_id, nama_produk, harga) VALUES
+(1, 'Kopi Hitam', 15000),
+(2, 'Cappuccino', 22000),
+(3, 'Latte', 25000),
+(4, 'Americano', 18000);
+
+-- Pastikan tabel penjualan juga punya kolom produk_id
+ALTER TABLE penjualan ADD COLUMN produk_id INT;
+UPDATE penjualan SET produk_id = 1 WHERE produk = 'Kopi Hitam';
+UPDATE penjualan SET produk_id = 2 WHERE produk = 'Cappuccino';
+UPDATE penjualan SET produk_id = 3 WHERE produk = 'Latte';
+
 -- 1. INNER JOIN: Ambil penjualan + nama produk
 SELECT p.tanggal, pr.nama_produk, p.kota, p.jumlah, pr.harga
 FROM penjualan p
